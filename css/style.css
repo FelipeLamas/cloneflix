@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Elementos  Base     */
+
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+body{
+    background:var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 35px;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    color:#AAA;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: #FFF;
+}
+
+/* Conteúdo Filme Principal */
+
+.filme-principal{
+    font-size: 17px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/supernatural-background.jpg');
+    
+    background-size: cover;
+    height: 400px;
+
+    display: flex; /*Joga os elementos para o padrão em linha */
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.titulo-fp{
+    margin-top: 12%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding:15px 30px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;    
+}
+.filme-principal .container{
+    width: 60%;
+}
+
+
